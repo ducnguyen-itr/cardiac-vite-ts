@@ -1,0 +1,77 @@
+@import '../../../Styles/variables';
+
+.add-new-patient-drawer {
+  padding: $size-24;
+  .select-ct-wrapper {
+    .input-title-wrapper {
+      margin-bottom: $size-16;
+      font-weight: 600;
+      font-size: $size-16;
+      line-height: $size-24;
+    }
+  }
+  .title {
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+    margin: $size-16 0;
+  }
+  .add-name-container {
+    display: flex;
+    margin-bottom: $size-16;
+    .first-name {
+      padding-right: $size-8;
+    }
+    .last-name {
+      padding-left: $size-8;
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: $size-40;
+    .drawer-btn {
+      width: 50%;
+      &:first-child {
+        padding-right: $size-8;
+      }
+      &:last-child {
+        padding-left: $size-8;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .phone-number-add-new {
+    .country-select-menu {
+      min-width: $size-300;
+      .country-name {
+        max-width: $size-250;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .country-select-menu-list {
+      width: 352px;
+    }
+  }
+  .horizontal-pair-radio {
+    .ant-radio-group {
+      display: flex;
+      .ant-radio-wrapper {
+        font-weight: 400;
+      }
+    }
+    span {
+      white-space: pre;
+    }
+  }
+}
+
+.edit-add-patient-info-drawer {
+  .ant-drawer-header {
+    display: none;
+  }
+}

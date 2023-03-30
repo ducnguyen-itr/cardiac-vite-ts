@@ -1,0 +1,22 @@
+@import '../../Styles/variables';
+
+.search-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  .search-option-name {
+    margin-left: 12px;
+  }
+}
+.change-button-group {
+  margin-top: 40px;
+  display: flex;
+  gap: $size-16;
+  .custom-button {
+    flex: 1;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../Styles/variables';
+
+.custom-input {
+}
+
+.custom-input__error-message {
+  font-size: $size-12;
+  color: $red-6;
+  margin-bottom: 0;
+}
+
+.custom-input__title {
+  color: $gray-9;
+  margin-bottom: $size-4;
+}
+
+.custom-input__title__require {
+  color: $red-6;
+}

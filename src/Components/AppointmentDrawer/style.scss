@@ -1,0 +1,58 @@
+@import '../../Styles/variables';
+
+.show-tag {
+  .assign-select-outside-res {
+    display: none;
+  }
+}
+.select-error-message {
+  color: $red-6;
+  font-weight: normal;
+  font-size: $size-14;
+  line-height: $size-22;
+}
+.has-assign-title {
+  color: $gray-7;
+  font-weight: 600;
+  font-size: $size-12;
+  line-height: $size-20;
+}
+.appointment-option {
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $size-3 0;
+    // padding-right: $size-12;
+    .not-available {
+      justify-self: flex-end;
+      float: right;
+      color: $gray-7;
+      font-weight: normal;
+      font-size: $size-12;
+      line-height: $size-20;
+    }
+  }
+  &.ant-select-item-option-disabled {
+    background-color: $gray-3;
+    .search-option-name {
+      color: $gray-8;
+    }
+  }
+}
+.ant-picker-time-panel-column {
+  &::-webkit-scrollbar {
+    width: $size-4;
+    background: $gray-4;
+  }
+  &::-webkit-scrollbar-track {
+    background: $gray-2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-6;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $gray-7;
+  }
+}

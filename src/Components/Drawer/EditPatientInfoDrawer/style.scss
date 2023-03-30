@@ -1,0 +1,55 @@
+@import '../../../Styles/variables';
+
+.edit-patient-info-drawer-wrapper {
+  .edit-patient-info-drawer {
+    padding: $size-24;
+    .select-ct-wrapper {
+      .input-title-wrapper {
+        margin-bottom: $size-16;
+        font-weight: 600;
+        font-size: $size-16;
+        line-height: $size-24;
+      }
+    }
+    .title {
+      font-weight: 600;
+      font-size: $size-16;
+      line-height: $size-24;
+      margin: $size-16 0;
+    }
+    .group-input-container {
+      display: flex;
+      margin-bottom: $size-16;
+      .first-input {
+        padding-right: $size-8;
+      }
+      .last-input {
+        padding-left: $size-8;
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: $size-40;
+      .drawer-btn {
+        width: 50%;
+        &:first-child {
+          padding-right: $size-8;
+        }
+        &:last-child {
+          padding-left: $size-8;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.edit-patient-info-drawer-wrapper {
+  .ant-drawer-header {
+    display: none;
+  }
+}

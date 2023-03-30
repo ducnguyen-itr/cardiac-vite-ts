@@ -1,0 +1,47 @@
+.bioflux-sign-in {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &-bg-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    // background: rgba(0, 0, 0, 0.4);
+    // opacity: 0.4;
+  }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // opacity: 0.4;
+  }
+  &-clinician {
+    z-index: 1;
+    border-radius: 50%;
+    max-width: 10rem;
+  }
+  &-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-top: 2.275rem;
+    z-index: 1;
+  }
+  &-button {
+    margin-top: 2.125rem;
+    z-index: 1;
+    width: calc(100% - 4rem);
+  }
+  &-body {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 3.375rem;
+    padding-bottom: 6rem;
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../../Styles/variables';
+
+.diagnosis-drawer {
+  .ant-drawer-content-wrapper {
+    width: 400px !important;
+    .ant-drawer-content {
+      .ant-drawer-wrapper-body {
+        .ant-drawer-header {
+          &-title {
+            flex-direction: row-reverse;
+            align-items: center;
+            .ant-drawer-title {
+              font-weight: 600;
+              font-size: $size-20;
+              line-height: $size-28;
+              color: $gray-9;
+            }
+            .ant-drawer-close {
+              margin-right: 0;
+              font-size: $size-16;
+              color: $gray-9;
+            }
+          }
+        }
+        .ant-drawer-body {
+          padding: $size-16 $size-24;
+          .diagnosis-row,
+          .diagnosis-footer {
+            margin-top: $size-16;
+          }
+          .diagnosis-footer {
+            display: flex;
+            gap: $size-16;
+            .diagnosis-footer-btn {
+              flex: 1;
+            }
+          }
+          .acuity {
+            &-type {
+              .ant-radio-group {
+                display: flex;
+                .ant-radio-wrapper {
+                  flex: 1;
+                  justify-self: center;
+                }
+              }
+            }
+          }
+          .icd-type {
+            .flag {
+              .ant-checkbox-group {
+                display: flex;
+                .ant-checkbox-wrapper {
+                  flex: 1;
+                  justify-self: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

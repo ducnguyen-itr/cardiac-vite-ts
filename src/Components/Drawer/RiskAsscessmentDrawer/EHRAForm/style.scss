@@ -1,0 +1,24 @@
+@import '../../../../Styles/variables';
+
+.ehra-form {
+  color: $gray-9;
+  .ehra-row {
+    margin-top: $size-14;
+    .ant-radio-wrapper {
+      color: $gray-9;
+      .ehra-row-title {
+        font-weight: 600;
+        font-size: $size-14;
+        line-height: $size-22;
+      }
+    }
+  }
+  .ehra-footer {
+    display: flex;
+    gap: $size-16;
+    margin-top: $size-56;
+    &-btn {
+      flex: 1;
+    }
+  }
+}

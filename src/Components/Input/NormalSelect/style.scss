@@ -1,0 +1,32 @@
+@import '../../../Styles/variables';
+.error-message {
+  font-size: $size-12;
+  color: $red-6;
+}
+.select-wrapper {
+  position: relative;
+  .ant-select {
+    position: relative;
+  }
+  .ant-select-item {
+    &:hover {
+      background-color: $blue-1;
+    }
+    // &-option-active {
+    //   background-color: $blue-1;
+    // }
+    .attendee {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-info {
+        display: flex;
+        align-items: center;
+      }
+      &-status {
+        padding-right: $size-12;
+        color: $gray-7;
+      }
+    }
+  }
+}

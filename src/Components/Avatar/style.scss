@@ -1,0 +1,135 @@
+@import '../../Styles/variables';
+
+.avatar-ct-wrapper {
+  border: 1px solid $gray-4;
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .avatar-ct {
+    &-link {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    &-size {
+      &-22 {
+        width: $size-22;
+        height: $size-20;
+      }
+      &-24 {
+        width: $size-24;
+        height: $size-22;
+      }
+      &-28 {
+        width: $size-28;
+        height: $size-26;
+      }
+      &-32 {
+        width: $size-32;
+        height: $size-30;
+      }
+      &-40 {
+        width: $size-40;
+        height: $size-38;
+      }
+      &-80 {
+        width: $size-80;
+        height: $size-78;
+      }
+      &-100 {
+        width: $size-100;
+        height: $size-98;
+      }
+      &-128 {
+        width: $size-128;
+        height: $size-126;
+      }
+    }
+  }
+  .bg-avatar {
+    &-1 {
+      background-color: $red-2;
+      color: $red-5;
+    }
+    &-2 {
+      background-color: $volcano-2;
+      color: $volcano-6;
+    }
+    &-3 {
+      background-color: $orange-2;
+      color: $orange-6;
+    }
+    &-4 {
+      background-color: $gold-2;
+      color: $gold-6;
+    }
+    &-5 {
+      background-color: $geekblue-2;
+      color: $geekblue-5;
+    }
+    &-6 {
+      background-color: $lime-3;
+      color: $lime-7;
+    }
+    &-7 {
+      background-color: $green-2;
+      color: $green-6;
+    }
+    &-8 {
+      background-color: $cyan-2;
+      color: $cyan-6;
+    }
+    &-9 {
+      background-color: $purple-2;
+      color: $purple-4;
+    }
+    &-10 {
+      background-color: $magenta-2;
+      color: $magenta-5;
+    }
+  }
+  .avatar-ct {
+    // font-size: $size-18;
+    font-weight: 600;
+  }
+  .size {
+    &-22 {
+      font-size: 8px !important;
+      line-height: 16px !important;
+    }
+    &-24 {
+      font-size: 12px !important;
+      line-height: 20px !important;
+    }
+    &-28 {
+      font-size: 10px !important;
+      line-height: 28px !important;
+    }
+    &-32 {
+      font-size: 14px !important;
+      line-height: 22px !important;
+    }
+    &-40 {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+    &-52 {
+      font-size: 18px !important;
+      line-height: 26px !important;
+    }
+    &-80 {
+      font-size: 30px !important;
+      line-height: 38px !important;
+    }
+    &-100 {
+      font-size: 36px !important;
+      line-height: 44px !important;
+    }
+    &-128 {
+      font-size: calc(8rem / 2.85) !important;
+      line-height: 4rem !important;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import '../../../Styles/variables';
+
+.switch-program-type-modal {
+  .ant-modal-content {
+    padding: $size-32;
+    width: $size-500;
+
+    .switch-program-type-modal-container {
+      display: flex;
+
+      .switch-program-type-modal-icon {
+        font-size: $size-24;
+        color: $orange-6;
+      }
+
+      .switch-program-type-modal-content {
+        padding-left: $size-16;
+        padding-right: $size-40;
+
+        .switch-program-type-modal-title {
+          color: $gray-9;
+          font-weight: 600;
+          font-size: $size-16;
+          line-height: $size-24;
+          margin-bottom: $size-8;
+        }
+
+        .switch-program-type-modal-note {
+          color: $gray-8;
+          line-height: $size-22;
+
+          .switch-program-type-modal-note-bold {
+            font-weight: 600;
+          }
+        }
+
+        .switch-program-type-modal-radio {
+          margin-top: $size-8;
+          color: $gray-9;
+
+          .input-title-wrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .switch-program-type-modal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: $size-24;
+
+      .switch-program-type-modal-right-button-group {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: end;
+
+        .switch-program-type-modal-submit-button {
+          margin-left: $size-8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+// @import "./wheel-item-ct";
+// @import "./wheel-picker";
+// @import "./time-input";
+
+// .time-wheel-picker {
+//   width: 900px;
+//   height: 500px;
+//   padding: 1px;
+
+//   display: flex;
+//   flex-direction: row;
+//   // justify-content: center;
+//   // align-items: center;
+
+//   background-color: skyblue;
+//   &-range-wrapper {
+//     margin-top: 0.5rem;
+//     display: flex;
+//     // align-items: center;
+//     // justify-content: space-between;
+//   }
+//   &-item {
+//     width: 50%;
+//     position: relative;
+//   }
+//   &-title {
+//     font-weight: 600;
+//     color: $black;
+//     font-size: 1rem;
+//     line-height: 1.625rem;
+//   }
+//   &-popup-wrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 1rem;
+//     background-color: $white;
+
+//     box-shadow: 0px 4px 24px rgba(35, 36, 37, 0.16);
+//     border-radius: 0.25rem;
+
+//     .scroll-select-container {
+//       width: 3.625rem;
+//       background: $coal-lightest;
+//       border-radius: 0.25rem;
+//     }
+//     .scroll-item {
+//       padding: 0;
+//     }
+//   }
+
+//   &__label {
+//     color: $black;
+//     font-size: 0.875rem;
+//     font-weight: 600;
+//     line-height: 1.25rem;
+//     margin-bottom: 0.25rem;
+//   }
+// }

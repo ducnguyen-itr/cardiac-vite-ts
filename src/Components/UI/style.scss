@@ -1,0 +1,54 @@
+@import '../../Styles/variables';
+.patient-info-card {
+  border: $size-1 solid $gray-5;
+  border-radius: $size-2;
+  &-header {
+    border-bottom: $size-1 solid $gray-5;
+    padding: $size-12 $size-24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-header {
+      display: flex;
+      align-items: center;
+      .name-content {
+        margin-left: $size-8;
+        display: flex;
+        flex-direction: column;
+        color: $gray-9;
+        font-weight: 600;
+        font-size: $size-14;
+        line-height: $size-22;
+        .email {
+          font-weight: 400;
+          font-size: $size-12;
+          line-height: $size-20;
+          color: $gray-7;
+        }
+      }
+    }
+    .delete-btn {
+      border: none;
+    }
+  }
+  &-body {
+    padding: $size-24;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $gray-8;
+    .patient-info-card-body-item {
+      display: flex;
+      margin-bottom: $size-8;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .info-title {
+        flex: 1;
+      }
+      .info-data {
+        flex: 2;
+      }
+    }
+  }
+}

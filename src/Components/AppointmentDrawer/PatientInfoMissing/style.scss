@@ -1,0 +1,18 @@
+@import '../../../Styles/variables';
+
+.patient-info-missing {
+  background-color: $red-1;
+  color: $red-6;
+  padding: 0.5rem 1.5rem;
+  .see-more-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $blue-6;
+    width: fit-content;
+  }
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+  }
+}

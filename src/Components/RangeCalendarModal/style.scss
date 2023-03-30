@@ -1,0 +1,125 @@
+@import '../../Styles/variables';
+.ranger-picker-input-container {
+  width: 256px;
+  min-width: 256px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  font-size: $size-14;
+  line-height: $size-22;
+  color: $gray-6;
+  .time-show {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &:hover,
+  &:focus {
+    color: $gray-6;
+  }
+}
+.range-date-picker-input {
+  &__range-picker {
+    border: none;
+    box-shadow: none;
+    margin: 0 $size-10 0 $size-12;
+
+    height: $size-40;
+    width: calc(100% - 24px) !important;
+    .ant-picker-suffix {
+      display: none;
+    }
+    .range-picker-label {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      color: $gray-9;
+      padding: 0 $size-24;
+      margin-bottom: $size-2;
+      padding-right: 0;
+      div {
+        flex: 1;
+      }
+      .total-day {
+        flex: unset;
+        width: $size-64;
+        margin-right: $size-6;
+      }
+      .end-date {
+        margin-left: $size-50;
+      }
+    }
+    .ant-picker-panel-container {
+      box-shadow: none;
+      .ant-picker-panel {
+        border: none;
+      }
+    }
+  }
+}
+.on-demand-calendar {
+  left: 50% !important;
+  top: 295px !important;
+  transform: translateX(-50%) !important;
+  &.is-error {
+    top: 315px !important;
+  }
+  .ant-picker-range-wrapper {
+    min-width: unset !important;
+  }
+  .ant-picker-panel-container {
+    box-shadow: none;
+    .ant-picker-panel {
+      border-width: 0 0 0 0 !important;
+    }
+  }
+  .ant-picker-range-arrow {
+    visibility: hidden;
+  }
+  .ant-picker-decade-panel,
+  .ant-picker-year-panel,
+  .ant-picker-month-panel {
+    .ant-picker-content {
+      height: 230px;
+    }
+  }
+}
+.ranger-date-picker-menu {
+  padding: 0;
+  width: 582px;
+  height: 432px;
+  background-color: $gray-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .ant-picker-range-arrow {
+    display: none;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: $size-12 $size-24;
+    border-top: $size-1 solid $gray-5;
+  }
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    .description {
+      width: 100%;
+      background-color: $blue-1;
+      padding: $size-8 $size-24;
+      color: $blue-7;
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      margin-bottom: $size-10;
+    }
+  }
+}

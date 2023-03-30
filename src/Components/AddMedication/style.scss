@@ -1,0 +1,113 @@
+@import '../../Styles/variables';
+
+.add-medication-wrapper {
+  min-width: $size-482;
+  border: $size-1 solid $gray-4;
+  border-radius: $size-2;
+  .header {
+    height: $size-40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $size-12;
+    background: $gray-3;
+    .title {
+      font-weight: 600;
+      color: $gray-9;
+    }
+  }
+  .body {
+    padding: $size-12 $size-12 $size-16;
+    .time-to-take-main {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .time-to-take-item {
+        width: calc(20% - 4px);
+        &:not(:last-child) {
+          margin-right: $size-5;
+        }
+        .ant-picker {
+          padding-right: 0;
+        }
+      }
+    }
+    .calendarIcon {
+      color: $gray-6;
+    }
+  }
+  .button-group {
+    padding: 0 $size-12 $size-16 $size-12;
+    display: flex;
+    .cancel-button {
+      // color: $gray-8;
+      height: $size-32;
+      width: calc(50% - 8px);
+    }
+    .add-button {
+      height: $size-32;
+      width: calc(50% - 8px);
+      &:disabled {
+        background-color: $gray-3;
+        border: 1px solid $gray-5;
+      }
+    }
+  }
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      width: calc(50% - 5px);
+    }
+    .first-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .flex-1 {
+        flex: 1;
+      }
+      .flex-2 {
+        flex: 1.5;
+      }
+    }
+  }
+}
+.medication-card-container {
+  .medication-card-item {
+    background-color: $blue-1;
+    border-radius: $size-2;
+    padding: $size-8 $size-12;
+    .medication-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .medication-name {
+        font-weight: 600;
+        font-size: $size-14;
+        line-height: $size-22;
+        color: $gray-9;
+      }
+      .delete-btn {
+        color: $red-6;
+        background-color: transparent;
+        border: none;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .medication-card-bot {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .medication-quantity {
+        flex: 2;
+      }
+      .medication-note {
+        flex: 3;
+      }
+    }
+  }
+}

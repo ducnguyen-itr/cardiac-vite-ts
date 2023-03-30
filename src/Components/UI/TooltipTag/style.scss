@@ -1,0 +1,27 @@
+@import '../../../Styles/variables';
+
+.tooltip-tag {
+  font-weight: 400;
+  font-size: $size-12;
+  line-height: $size-20;
+  cursor: default;
+  width: fit-content;
+}
+.tooltip-tag-popover {
+}
+.ant-popover-title {
+  display: none;
+}
+.ant-popover-inner-content {
+  font-weight: 400;
+  font-size: $size-14;
+  line-height: $size-20;
+  color: $gray-8;
+  min-width: 270px;
+  .tooltip-tag-content {
+    margin-top: $size-4;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

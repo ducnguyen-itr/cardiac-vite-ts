@@ -1,0 +1,44 @@
+@import '../../../Styles/variables';
+
+.detail-daily-entry-drawer {
+  .ant-drawer-header {
+    display: none;
+  }
+  .ant-drawer-body {
+    overflow: hidden;
+  }
+  .detail-daily-container {
+    overflow: auto;
+    height: 100%;
+    padding: $size-24;
+    .detail-card {
+      display: flex;
+      align-items: center;
+      padding: 0 $size-20;
+      justify-content: space-between;
+      height: $size-58;
+      background: $gray-2;
+      border-radius: $size-2;
+      margin-bottom: $size-16;
+      font-weight: 400;
+      font-size: $size-16;
+      line-height: $size-24;
+      color: $gray-9;
+      &-value {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-weight: 400;
+        font-size: $size-14;
+        line-height: $size-24;
+        .bold-value {
+          font-weight: 600;
+          font-size: $size-24;
+          line-height: $size-32;
+          color: $blue-7;
+          margin-right: $size-4;
+        }
+      }
+    }
+  }
+}

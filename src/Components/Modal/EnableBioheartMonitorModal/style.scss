@@ -1,0 +1,33 @@
+@import '../../../Styles//variables';
+
+.enable-bioheart-monitor-modal {
+  .ant-modal-close-x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ant-modal-body {
+    padding: $size-24;
+    .radio-container {
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      color: $gray-9;
+      .sub-title {
+        margin-bottom: $size-8;
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    .action-btns {
+      display: flex;
+    }
+  }
+  // &-has-disabled-btn {
+  //   .ant-modal-footer {
+  //     justify-content: space-between;
+  //   }
+  // }
+}

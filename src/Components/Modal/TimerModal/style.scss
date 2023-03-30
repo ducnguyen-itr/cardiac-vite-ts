@@ -1,0 +1,105 @@
+@import '../../../Styles/variables';
+
+.timer-modal-wrapper {
+  // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: $size-88;
+  top: $size-32;
+  border-radius: 4px;
+  .ant-modal-header {
+    padding: 0;
+    border-radius: 4px;
+    .timer-modal-custom-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 $size-16 0 $size-8;
+      .minimize-btn {
+        padding: 0;
+        border: none;
+        color: $orange-6;
+      }
+      .discard-btn {
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+  .ant-modal-close-x {
+    display: none;
+  }
+  .timer-modal-content {
+    padding: $size-8 $size-16;
+  }
+  .switch-container {
+    display: flex;
+    align-items: center;
+    .switch-title {
+      margin-left: $size-6;
+      color: $gray-8;
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .start-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .started-button-containt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: calc(50% - 5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .stop-button {
+      gap: $size-6;
+    }
+  }
+  .show-more-btn {
+    display: flex;
+    align-items: center;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: $blue-6;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    margin-top: $size-12;
+    margin-bottom: $size-8;
+    &-title {
+      margin-right: $size-6;
+    }
+  }
+  .add-participan-item {
+    .select-ct-wrapper {
+      width: $size-180;
+    }
+  }
+  .add-participan-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue-1;
+    border-radius: $size-2;
+    margin-top: $size-8;
+    &:disabled {
+      background-color: $blue-1;
+    }
+  }
+  .loading-space {
+    top: 0;
+  }
+}

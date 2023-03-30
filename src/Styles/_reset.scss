@@ -1,0 +1,47 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  @font-face {
+    font-family: "SFProDisplay";
+    // src: url("../Assets/Fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    //   url("../Assets/Fonts/SFProDisplay-Regular.woff") format("woff");
+    src: url("../Assets/Fonts/SFProDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SFProDisplay";
+    // src: url("../Assets/Fonts/SFProDisplay-Bold.woff2") format("woff2"),
+    //   url("../Assets/Fonts/SFProDisplay-Bold.woff") format("woff");
+    src: url("../Assets/Fonts/SFProDisplay-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  > * {
+    font-size: $size-14;
+    color: $gray-9;
+    line-height: $size-22;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+      apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  }
+
+  .div-root {
+    height: 100vh;
+    &-header {
+      padding: 0;
+      &.uppercase-header {
+        .ant-page-header-heading-title {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .ant-layout-sider {
+      z-index: 1;
+      overflow: auto;
+    }
+  }
+}

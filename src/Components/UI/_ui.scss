@@ -1,0 +1,39 @@
+@import './DisplayData4/display-data-4';
+
+.arler-tooltip-missing-data {
+  font-size: $size-14;
+  color: $red-6;
+  padding-right: $size-10;
+  padding-top: $size-4;
+}
+.display-data-link {
+  padding: 0;
+  height: fit-content;
+}
+.virtual-color {
+  color: $geekblue-6;
+  border: $size-1 solid $geekblue-3;
+  background-color: $geekblue-1;
+  box-sizing: border-box;
+  border-radius: $size-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0 $size-8;
+  margin: 0;
+}
+.in-person-color {
+  background-color: $orange-1;
+  border: $size-1 solid $orange-3;
+  box-sizing: border-box;
+  border-radius: $size-2;
+  color: $orange-6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0 $size-8;
+  margin: 0;
+}

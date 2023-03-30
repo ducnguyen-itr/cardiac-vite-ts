@@ -1,0 +1,60 @@
+@import '../../../../Styles/variables';
+
+.icd-select {
+  .title {
+    margin-bottom: $size-2;
+    .required-field {
+      color: $red-5;
+    }
+  }
+}
+
+.ant-select-dropdown {
+  .icd-select-item {
+    .icd-select-selection {
+      display: flex;
+      width: 100%;
+      font-size: $size-14;
+      line-height: $size-22;
+      align-items: center;
+      .code {
+        width: $size-72;
+        max-width: $size-72;
+        min-width: $size-72;
+        font-weight: 600;
+        color: $gray-9;
+        margin-right: $size-12;
+      }
+      .description {
+        width: 240px;
+        max-width: 240px;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        color: $gray-8;
+      }
+    }
+    .icd-select-selection__custom {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-weight: 600;
+      font-size: $size-14;
+      word-break: break-word;
+      white-space: pre-wrap;
+      color: $blue-6;
+    }
+  }
+  .icd-select-item__custom {
+    background-color: $blue-1;
+  }
+}
+
+.ant-select-dropdown-empty {
+  text-align: center;
+}
+
+.icd-content-tooltip {
+  z-index: 9999;
+}

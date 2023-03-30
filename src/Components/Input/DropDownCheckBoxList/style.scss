@@ -1,0 +1,30 @@
+@import '../../../Styles/variables';
+
+.dropdown-checkbox-list-wrapper {
+  .dropdown-checkbox-list-btn {
+    height: $size-24;
+    width: $size-270;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    .display-button-content {
+      width: 100%;
+      padding: 0 $size-8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $gray-6;
+    }
+  }
+}
+.dropdown-checkbox-list-menu {
+  height: 400px;
+  overflow: auto;
+  .drop-down-checkbox-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    &:hover {
+      background-color: $gray-1;
+    }
+  }
+}

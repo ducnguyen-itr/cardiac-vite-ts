@@ -1,0 +1,261 @@
+// define color variables
+$bg: #f0f2f5;
+$gray-1: #ffffff;
+$gray-2: #fafafa;
+$gray-3: #f5f5f5;
+$gray-4: #e8e8e8;
+$gray-5: #d9d9d9;
+$gray-6: #bfbfbf;
+$gray-7: #8c8c8c;
+$gray-8: #595959;
+$gray-9: #262626;
+$gray-10: #000000;
+
+$black-1: #0c0d0e;
+
+$blue-1: #e6f7ff;
+$blue-2: #bae7ff;
+$blue-3: #91d5ff;
+$blue-4: #69c0ff;
+$blue-5: #40a9ff;
+$blue-6: #1890ff;
+$blue-7: #096dd9;
+
+$primary-blue: #2265c6;
+
+$geekblue-2: #d6e4ff;
+$geekblue-5: #597ef7;
+$geekblue-7: #1d39c4;
+
+$red-1: #fff1f0;
+$red-2: #ffccc7;
+$red-3: #ffa39e;
+$red-4: #ff7875;
+$red-5: #ff4d4f;
+$red-6: #f5222d;
+$red-7: #cf1322;
+
+$gold-2: #fff1b8;
+$gold-3: #ffe58f;
+$gold-5: #ffc53d;
+$gold-6: #faad14;
+
+$volcano-1: #fff2e8;
+$volcano-2: #ffd8bf;
+$volcano-6: #fa541c;
+$volcano-7: #d4380d;
+
+$orange-1: #fff7e6;
+$orange-2: #ffe7ba;
+$orange-3: #ffd591;
+$orange-6: #fa8c16;
+$orange-7: #d46b08;
+
+$lime-3: #eaff8f;
+$lime-7: #7cb305;
+
+$green-1: #f6ffed;
+$green-2: #d9f7be;
+$green-3: #b7eb8f;
+$green-6: #52c41a;
+$green-7: #389e0d;
+
+$green-5: #89c15d;
+
+$gold-1: #fffbe6;
+$gold-6: #faad14;
+
+$cyan-1: #e6fffb;
+$cyan-2: #b5f5ec;
+$cyan-6: #13c2c2;
+$cyan-7: #08979c;
+
+$purple-1: #f9f0ff;
+$purple-2: #efdbff;
+$purple-4: #b37feb;
+
+$magenta-2: #ffd6e7;
+$magenta-5: #f759ab;
+
+// CHART COLORS
+$green-4: #95de64;
+$purple-5: #9254de;
+// lime-3
+$cyan-3: #87e8de;
+// red-5
+$magenta-4: #ff85c0;
+$geekblue-1: #f0f5ff;
+$geekblue-3: #adc6ff;
+$geekblue-6: #2f54eb;
+$geekblue-9: #1d39c4;
+
+// define font size variables
+$size-0-16: -1rem;
+$size-0-10: -0.625rem;
+$size-0-6: -0.375rem;
+$size-0-3: -0.1875rem;
+$size-0-1: -0.0625rem;
+$size-1: 0.0625rem;
+$size-2: 0.125rem;
+$size-3: 0.1875rem;
+$size-4: 0.25rem;
+$size-5: 0.3125rem;
+$size-6: 0.375rem;
+$size-7: 0.4375rem;
+$size-8: 0.5rem;
+$size-9: 0.5625rem;
+$size-8-05: 0.53125rem;
+$size-10: 0.625rem;
+$size-11: 0.6875rem;
+$size-12: 0.75rem;
+$size-12-05: 0.78125rem;
+$size-13: 0.8125rem;
+$size-14: 0.875rem;
+$size-15: 0.9375rem;
+$size-16: 1rem;
+$size-17: 1.0625rem;
+$size-18: 1.125rem;
+$size-20: 1.25rem;
+$size-20-05: 1.253125rem;
+$size-22: 1.375rem;
+$size-23: 1.4375rem;
+$size-24: 1.5rem;
+$size-25: 1.5625rem;
+$size-26: 1.625rem;
+$size-28: 1.74rem;
+$size-30: 1.875rem;
+$size-32: 2rem;
+$size-34: 2.125rem;
+$size-36: 2.25rem;
+$size-38: 2.375rem;
+$size-40: 2.5rem;
+$size-42: 2.625rem;
+$size-44: 2.75rem;
+$size-41: 2.5625rem;
+$size-45: 2.8125rem;
+$size-46: 2.875rem;
+$size-48: 3rem;
+$size-50: 3.125rem;
+$size-52: 3.25rem;
+$size-54: 3.375rem;
+$size-56: 3.5rem;
+$size-58: 3.625rem;
+$size-60: 3.75rem;
+$size-64: 4rem;
+$size-68: 4.25rem;
+$size-70: 4.375rem;
+$size-72: 4.5rem;
+$size-75: 4.6875rem;
+$size-76: 4.75rem;
+$size-78: 4.875rem;
+$size-80: 5rem;
+$size-84: 5.25rem;
+$size-88: 5.5rem;
+$size-90: 5.625rem;
+$size-98: 6.125rem;
+$size-100: 6.25rem;
+$size-104: 6.5rem;
+$size-108: 6.75rem;
+$size-110: 6.875rem;
+$size-120: 7.5rem;
+$size-126: 7.825rem;
+$size-128: 8rem;
+$size-134: 8.375rem;
+$size-137: 8.5625rem;
+$size-137: 8.625rem;
+$size-145: 9.0625rem;
+$size-146: 9.125rem;
+$size-148: 9.25rem;
+$size-150: 9.375rem;
+$size-160: 10rem;
+$size-165: 10.3125rem;
+$size-166: 10.375rem;
+$size-180: 11.25rem;
+$size-190: 11.875rem;
+$size-195: 12.1875rem;
+$size-200: 12.5rem;
+$size-210: 13.125rem;
+$size-220: 13.75rem;
+$size-240: 15rem;
+$size-250: 15.625rem;
+$size-260: 16.25rem;
+$size-270: 16.875rem;
+$size-285: 17.8125rem;
+$size-294: 18.375rem;
+$size-482: 30.125rem;
+$size-522: 32.625rem;
+$size-300: 18.75rem;
+$size-310: 19.375rem;
+$size-320: 20rem;
+$size-330: 20.625rem;
+$size-336: 21rem;
+$size-340: 21.25rem;
+$size-352: 22rem;
+$size-360: 22.5rem;
+$size-400: 25rem;
+$size-420: 26.25rem;
+$size-350: 21.875rem;
+$size-360: 22.5rem;
+$size-400: 25rem;
+$size-408: 25.5rem;
+$size-450: 28.125rem;
+$size-482: 30.125rem;
+$size-485: 30.3125rem;
+$size-500: 31.25rem;
+$size-512: 32rem;
+$size-530: 33.125rem;
+$size-560: 35rem;
+$size-600: 38.125rem;
+$size-610: 37.5rem;
+$size-650: 40.625rem;
+$size-700: 43.75rem;
+$size-800: 50rem;
+$size-840: 52.5rem;
+
+$bg-000-opacity-05: rgba(0, 0, 0, 0.5);
+
+$elevation-1: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+.text-color-blue-7 {
+  color: $blue-7 !important;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw600-important {
+  font-weight: 600 !important;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}
+
+.color-green-6 {
+  color: $green-6;
+}
+
+.color-red-5 {
+  color: $red-5 !important;
+}
+
+.color-red-6 {
+  color: $red-6 !important;
+}
+
+.color-gray-8 {
+  color: $gray-8;
+}
+
+.color-gray-9 {
+  color: $gray-9;
+}
+
+.color-gray-10 {
+  color: $gray-10 !important;
+}
+
+.color-gold-6 {
+  color: $gold-6;
+}

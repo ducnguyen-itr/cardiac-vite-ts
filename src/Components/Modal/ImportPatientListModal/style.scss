@@ -1,0 +1,65 @@
+@import '../../../Styles/variables';
+
+.import-patients-modal {
+  .ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.import-csv-modal {
+  padding: $size-24;
+  .select-ct-wrapper {
+    .input-title-wrapper {
+      margin-bottom: $size-16;
+      font-weight: 600;
+      font-size: $size-16;
+      line-height: $size-24;
+    }
+  }
+  .upload-file-new {
+    height: unset;
+  }
+  .upload-file {
+    &-title {
+      font-weight: 600;
+      font-size: $size-16;
+      line-height: $size-24;
+      color: $gray-9;
+      margin: $size-16 0;
+    }
+    &-zone {
+      width: 100%;
+      background-color: $gray-3;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      align-items: center;
+      padding: 0 $size-18;
+      padding-bottom: 1rem;
+      &-icon {
+        color: $blue-5;
+        font-size: 33px;
+      }
+      &-title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 18px;
+        color: $gray-9;
+      }
+      &-desc {
+        text-align: center;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: $gray-7;
+      }
+    }
+  }
+  .csv-limit-error {
+    padding: 0.25rem 0.5rem;
+    background-color: $red-1;
+    color: $red-6;
+    border-radius: 2px;
+  }
+}

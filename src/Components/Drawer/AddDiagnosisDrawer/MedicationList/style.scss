@@ -1,0 +1,21 @@
+@import '../../../../Styles/variables';
+
+.medications {
+  .medication-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $size-2;
+    background-color: $blue-1;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $blue-7;
+    padding: 0 $size-10;
+    margin-top: $size-6;
+    &-action {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@import '../../../Styles/variables';
+@import '../wheelPickerTimeInput/wheel-picker-item';
+
+.wheel-picker-time-input {
+  height: $size-40;
+  .dropdown {
+    height: $size-40;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    button {
+      color: transparent;
+      border: unset;
+    }
+  }
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+  }
+  &-range-wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0px 4px 24px rgba(35, 36, 37, 0.16);
+    border-radius: 0.25rem;
+    user-select: none;
+  }
+  &-range-title {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  &-range-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    .scroll-select-container {
+      width: 3.625rem;
+      background: $geekblue-2;
+      border-radius: 0.25rem;
+    }
+    .scroll-item {
+      padding: 0;
+    }
+  }
+  &-popup-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+
+    box-shadow: 0px 4px 24px rgba(35, 36, 37, 0.16);
+    border-radius: 0.25rem;
+
+    .scroll-select-container {
+      width: 3.625rem;
+      background: black;
+      border-radius: 0.25rem;
+    }
+    .scroll-item {
+      padding: 0;
+    }
+  }
+  &-label {
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $size-40;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    background-color: $gray-3;
+    border-radius: 0.25rem;
+    border: 1px solid $gray-5;
+    .flex-row {
+      display: flex;
+      flex: 1;
+    }
+    &.--error {
+      border: 1px solid red !important;
+    }
+  }
+
+  &-seperator {
+    margin: 0 0.25rem;
+    color: $gray-8;
+  }
+  &-title {
+    color: $gray-8;
+  }
+  &-placeholder {
+    color: $gray-8;
+  }
+  &-toggle {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    // outline: none !important;
+    border: 0.0625rem solid black;
+    // background: transparent !important;
+    // box-shadow: none !important;
+    // border: none !important;
+    background-color: black !important;
+    &:focus {
+      border: 0.0625rem solid $blue-3 !important;
+      background-color: black;
+      box-shadow: 0px 0px 4px 1px rgba(57, 122, 204, 0.25);
+    }
+    &:hover {
+      background-color: white;
+      border: 0.0625rem solid black;
+      box-shadow: none;
+    }
+  }
+  &-clear-btn {
+    background-color: transparent;
+    outline: none !important;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    // opacity: 80%;
+    color: $gray-8;
+    img {
+      width: $size-16;
+      height: $size-16;
+    }
+  }
+  &.--disabled {
+    cursor: not-allowed;
+  }
+  .option-item {
+  }
+  .css-1go8zw9-container {
+    .css-rmtpy5-control {
+      padding: 0 1rem 0 0;
+    }
+    .css-8bgjdf-control {
+      padding: 0 1rem 0 0;
+    }
+  }
+
+  [class*='-indicatorContainer'] {
+    margin-right: 1rem;
+    padding: 0;
+    display: flex;
+  }
+  .custom-text-input__error-message {
+    text-align: left;
+    color: red;
+  }
+
+  &.referring-physician-select-input {
+    [class*='-MenuList'] {
+      & > [class*='-option'] {
+        &:not(:first-of-type) {
+          border-top: none;
+        }
+
+        &:nth-of-type(2) {
+          // border-top: 1px solid $black-shade-4;
+        }
+      }
+    }
+  }
+
+  &.select-facilities-select-input {
+    width: 15rem;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../Styles/variables';
+
+.wrapper-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $size-10 0 $size-10 $size-12;
+
+  &-title {
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+    color: $gray-9;
+  }
+
+  .wrapper-chart-header-info {
+    display: flex;
+
+    .wrapper-chart-header-info-item {
+      display: flex;
+
+      & + .wrapper-chart-header-info-item {
+        margin-left: $size-16;
+      }
+
+      .wrapper-chart-header-info-value {
+        font-weight: 600;
+        margin-left: $size-4;
+      }
+    }
+  }
+}

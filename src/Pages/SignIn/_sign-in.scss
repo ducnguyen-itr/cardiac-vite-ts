@@ -1,0 +1,80 @@
+@import './Layout/BiofluxSignIn/bioflux-sign-in';
+
+.sign-in {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: calc(50% - 0.625rem);
+    width: 50%;
+    // height: 100%;
+    padding: $size-24 $size-32;
+
+    .password-icon-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $size-18;
+        height: $size-18;
+      }
+
+      svg {
+        color: $gray-7;
+      }
+    }
+
+    .remember-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: $size-24;
+    }
+    .sign-in-button,
+    .bioflux-button {
+      // height: 2.5rem;
+    }
+
+    .bioflux-divider {
+      height: 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      &-plash {
+        height: 1px;
+        background-color: $gray-4;
+        width: 3.5rem;
+      }
+      &-content {
+        margin: 0 0.75rem;
+        color: $gray-8;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: calc(50% - 0.625rem);
+    width: 50%;
+    // height: 100%;
+    // padding: $size-24 $size-32;
+  }
+
+  &-copyright {
+    color: $gray-8;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

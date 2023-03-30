@@ -1,0 +1,14 @@
+@import '../../Styles/variables';
+.header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  // width: fit-content;
+  max-width: 500px;
+  height: $size-64;
+  padding-right: $size-24;
+  // padding: $size-16 $size-24;
+  background-color: transparent;
+  border-left: none;
+}

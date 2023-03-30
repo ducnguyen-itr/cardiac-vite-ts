@@ -1,0 +1,138 @@
+@import '../../../Styles/variables';
+
+.country-select-button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: $size-1 solid $gray-5;
+  padding: $size-4 $size-12;
+  font-weight: 400;
+  font-size: $size-14;
+  line-height: $size-22;
+  color: $gray-9;
+  background-color: $gray-1;
+
+  &.ant-dropdown-open {
+    border-color: $blue-5;
+    border-right-width: $size-1 !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $blue-5;
+    border-right-width: $size-1 !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+
+  span {
+    margin: 0 !important;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $gray-9;
+  }
+
+  .suffix-icon {
+    color: $gray-7;
+  }
+
+  .anticon-down {
+    color: $gray-6;
+    font-size: $size-13 !important;
+    margin-left: $size-5 !important;
+  }
+
+  .phone-box-display {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $gray-9;
+      margin: 0;
+
+      &:first-child {
+        margin-right: $size-5;
+      }
+    }
+  }
+
+  .text-color {
+    color: $gray-6 !important;
+
+    span {
+      color: $gray-6;
+    }
+  }
+}
+
+.country-select-menu {
+  padding: $size-4 0;
+  min-width: $size-450;
+
+  &-search {
+    padding: $size-5 $size-12;
+  }
+
+  &-list {
+    max-height: $size-300;
+    overflow: auto;
+  }
+
+  &-item {
+    padding: $size-5 $size-12;
+
+    &:hover {
+      background-color: $blue-1;
+    }
+
+    .ant-dropdown-menu-title-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 0;
+        margin-left: $size-5;
+      }
+
+      .flag-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.country-normal-select-menu-item {
+  padding: $size-5 $size-12;
+
+  &:hover {
+    background-color: $blue-1;
+  }
+
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .country-normal-select-flag-content {
+      display: flex;
+    }
+  }
+}
+
+.pad5-12 {
+  padding: $size-5 $size-12;
+}
+
+.flag-icon {
+  font-size: $size-24 !important;
+}

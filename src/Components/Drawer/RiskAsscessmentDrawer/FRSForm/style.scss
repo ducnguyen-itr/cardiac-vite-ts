@@ -1,0 +1,39 @@
+@import '../../../../Styles/variables';
+
+.frs-form {
+  .frs-row {
+    margin-top: $size-12;
+    .ant-radio-wrapper {
+      margin-right: $size-42;
+    }
+  }
+  .frs-flex-row {
+    display: flex;
+    gap: $size-16;
+  }
+  .frs-row-half {
+    flex: 1;
+  }
+  .frs-summary {
+    background-color: $gray-2;
+    padding: $size-10 $size-14;
+    margin-top: $size-12;
+    &-score {
+      display: flex;
+      justify-content: space-between;
+    }
+    .total {
+      font-weight: 600;
+      font-size: $size-14;
+      line-height: $size-22;
+    }
+  }
+  .frs-footer {
+    display: flex;
+    gap: $size-16;
+    margin-top: $size-56;
+    &-btn {
+      flex: 1;
+    }
+  }
+}

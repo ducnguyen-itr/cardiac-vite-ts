@@ -1,0 +1,67 @@
+.on-demand-table-wrapper {
+  .error-row {
+    cursor: not-allowed;
+    .normal-cell-wrapper {
+      color: #8c8c8c8c;
+    }
+  }
+  .disable-row {
+    cursor: not-allowed;
+    .normal-cell-wrapper {
+      color: #8c8c8c8c;
+    }
+  }
+}
+.error-template-row {
+  background: $red-1;
+}
+.disable-cell {
+  color: $gray-7;
+}
+.create-bill-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $size-40;
+  margin-right: $size-16;
+}
+.create-bill-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $size-40;
+  margin-right: $size-16;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $size-40;
+    &:first-child {
+      margin-right: $size-16;
+    }
+  }
+}
+.normal-cell-wrapper {
+  &.un-enough-time {
+    color: $orange-6;
+  }
+  &.enough-time {
+    color: $green-7;
+  }
+  &.no-data-cell {
+    color: $gray-9;
+  }
+}
+.cursor-default-table {
+  .ant-table tbody tr {
+    cursor: default;
+  }
+}
+span.black-color {
+  color: $gray-9;
+}
+
+.is-imported-icon {
+  color: $green-7;
+  font-size: $size-16;
+}

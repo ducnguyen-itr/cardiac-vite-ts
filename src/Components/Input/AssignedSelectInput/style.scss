@@ -1,0 +1,22 @@
+@import '../../../Styles/variables';
+.appointment-option {
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $size-3 0;
+    // padding-right: $size-12;
+    .not-available {
+      justify-self: flex-end;
+      float: right;
+      color: $gray-7;
+      font-weight: normal;
+      font-size: $size-12;
+      line-height: $size-20;
+    }
+  }
+}
+.ant-select-item-option-grouped {
+  padding-left: $size-12;
+}

@@ -1,0 +1,14 @@
+@import '../../../../Styles/variables';
+
+.multi-checkbox {
+  color: $gray-9;
+  &-row {
+    padding-right: $size-14;
+    margin-top: $size-12;
+    display: flex;
+    justify-content: space-between;
+    .ant-checkbox-wrapper {
+      color: $gray-9;
+    }
+  }
+}

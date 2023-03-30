@@ -1,0 +1,75 @@
+@import '../../Styles/variables';
+
+.select-wrapper {
+  .debounce-search-option {
+    display: flex;
+    align-items: center;
+    &-name {
+      margin-left: $size-12;
+      .main-name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray-9;
+        display: flex;
+        .is-deleted-icon {
+          font-size: $size-20;
+          color: $gold-6;
+          align-self: center;
+          margin-left: $size-12;
+        }
+      }
+      .sub-name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: $gray-8;
+        display: flex;
+        .qoute {
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+  .debounce-other-option-wrapper {
+    padding: 0;
+  }
+  .debounce-other-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue-1;
+    font-weight: 600;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $blue-6;
+    padding: $size-5 0;
+  }
+}
+
+.rma-options {
+  .rma-options-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: $gray-7;
+  }
+  .rma-tag {
+    background-color: $red-1;
+    border: $size-1 solid $red-3;
+    border-radius: $size-2;
+    color: $red-6;
+    margin-left: $size-12;
+    font-size: $size-12;
+    width: $size-40;
+    height: $size-22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &:hover {
+    background-color: $gray-3;
+  }
+}

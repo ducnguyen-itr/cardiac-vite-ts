@@ -1,0 +1,32 @@
+@import '../../Styles/variables';
+
+.missing-tag {
+  font-weight: 400;
+  font-size: $size-12;
+  line-height: $size-20;
+  cursor: default;
+  width: fit-content;
+}
+.missing-data-popover {
+}
+.ant-popover-title {
+  display: none;
+}
+.ant-popover-inner-content {
+  font-weight: 400;
+  font-size: $size-14;
+  line-height: $size-20;
+  color: $gray-8;
+  min-width: 270px;
+  .missing-data-content {
+    margin-top: $size-4;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.missing-info-tag-popover {
+  background-color: $gold-2;
+  padding: $size-12;
+}

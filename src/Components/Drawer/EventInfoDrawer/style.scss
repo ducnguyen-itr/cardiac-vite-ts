@@ -1,0 +1,142 @@
+@import '../../../Styles/variables';
+
+.event-info-drawer-wrapper {
+  transform: unset !important;
+  p {
+    margin-bottom: unset;
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+  .event-info-drawer-body {
+    padding: $size-24 $size-20;
+  }
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      flex-direction: column;
+      p {
+        white-space: pre;
+      }
+      &-event-time-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &-event-time {
+        font-weight: 600;
+        font-size: $size-20;
+        line-height: $size-28;
+        color: $blue-6;
+      }
+      &-event-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 400;
+        font-size: $size-14;
+        line-height: $size-22;
+        color: $gray-8;
+      }
+      .repeat-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $gray-8;
+          margin-right: $size-6;
+          .anticon {
+            font-size: $size-16;
+          }
+        }
+      }
+    }
+    &-edit-btn {
+      width: $size-46;
+      height: $size-32;
+      color: $blue-6;
+      border-color: $blue-6;
+      margin-left: $size-20;
+    }
+  }
+  .event-status {
+    display: flex;
+    padding: $size-1;
+    align-items: center;
+    justify-content: flex-start;
+    color: $green-7;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    margin-bottom: $size-20;
+    &-icon {
+      font-size: $size-20;
+      margin-right: $size-12;
+    }
+    &.overdue {
+      color: $orange-6;
+    }
+    &.canceled {
+      color: $red-6;
+    }
+  }
+  .event-info-title {
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+    color: $gray-9;
+  }
+  .event-data-info {
+    .display-data-2-item {
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: $size-8;
+      }
+    }
+  }
+  .event-button-container {
+    .mark-as-done {
+      background-color: $green-7;
+      border-color: $green-7;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .mark-as-overdue {
+      background-color: $orange-6;
+      border-color: $orange-6;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .row-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      span {
+        &:first-child {
+          margin-left: $size-4;
+        }
+      }
+    }
+  }
+  .padlr40 {
+    padding: 0 $size-40;
+  }
+}
+
+.dropdown-cancel-apm-menu {
+  .dropdown-cancel-apm-item {
+    text-align: center;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $red-6;
+  }
+}

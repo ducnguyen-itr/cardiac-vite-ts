@@ -1,0 +1,11 @@
+@import '../../../Styles/variables';
+.confirm-modal-content {
+  color: $gray-8;
+  strong {
+    font-weight: 600;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}

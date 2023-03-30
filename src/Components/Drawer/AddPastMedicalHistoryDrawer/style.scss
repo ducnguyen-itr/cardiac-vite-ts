@@ -1,0 +1,59 @@
+@import '../../../Styles/variables';
+
+.add-past-medical-history-drawer {
+  .ant-drawer-header {
+    display: none;
+  }
+  .add-past-medical-history-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $size-56;
+    padding: 0 $size-24;
+    border-bottom: $size-1 solid $gray-3;
+    .add-past-medical-history-drawer-title {
+      font-weight: 600;
+      font-size: $size-20;
+      line-height: $size-28;
+      color: $gray-9;
+    }
+    .add-past-medical-history-drawer-close-btn {
+      height: $size-24;
+      width: $size-24;
+    }
+    // .add-past-medical-history-drawer-close-icon {
+    //   font-size: $size-24;
+    // }
+  }
+  .add-past-medical-history-drawer-content {
+    padding: 0 $size-24 $size-24 $size-24;
+    margin-top: $size-16;
+    .radio-ct-wrapper {
+      align-items: flex-start;
+      .ant-radio-group {
+        display: flex;
+        justify-content: space-between;
+        width: $size-137 !important;
+        .radio-item {
+          width: unset;
+        }
+      }
+    }
+    .medical-history-select {
+      .padl24,
+      .mt4-padl24 {
+        padding-left: $size-16;
+      }
+    }
+    .datepicker-ct-wrapper {
+      margin-top: $size-8 !important;
+      .b {
+        font-weight: 400 !important;
+      }
+    }
+    .add-past-medical-history-drawer-submit-btn {
+      margin-top: $size-56;
+      width: 100%;
+    }
+  }
+}

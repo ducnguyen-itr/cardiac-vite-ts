@@ -1,0 +1,220 @@
+@import '../../Styles/variables';
+
+.message-input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .message-input-container {
+    flex: 1;
+    border: $size-1 solid $gray-5;
+    height: fit-content;
+    border-radius: $size-20;
+    margin-right: $size-16;
+    background-color: $gray-1;
+    display: flex;
+    align-items: center;
+    padding: $size-6 0 $size-6 $size-20;
+    position: relative;
+    .disabled-text {
+      flex: 1;
+      text-align: left;
+      font-weight: 400;
+      font-size: $size-16;
+      line-height: $size-24;
+      color: $gray-6;
+    }
+    .input-container {
+      flex: 1;
+      .normal-message-input {
+        border: none;
+        padding: 0;
+        height: $size-28;
+        box-shadow: none;
+        font-weight: 400;
+        font-size: $size-16;
+        line-height: $size-24;
+        padding-left: 0;
+        &::selection {
+          // background-color: $gray-8;
+          // color: red;
+        }
+      }
+    }
+    .divider {
+      height: initial;
+      align-self: stretch;
+      min-height: $size-28;
+      margin-left: $size-15;
+      width: $size-1;
+      background-color: $gray-5;
+      &.is-upload {
+        height: 168px;
+      }
+    }
+
+    .upload-btn {
+      border: none;
+      background-color: transparent;
+      color: $gray-6;
+      font-size: $size-16;
+      display: flex;
+      padding: 0;
+      height: $size-28;
+      align-items: center;
+      justify-content: center;
+      width: $size-56;
+      &::after {
+        display: none;
+      }
+      &.active {
+        color: $blue-6;
+      }
+    }
+    // &.on-drag {
+    //   border-color: rebeccapurple;
+    // }
+    &.dropping-file {
+      padding-top: $size-15;
+      padding-bottom: $size-15;
+    }
+    .drop-zone-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $gray-7;
+      opacity: 0.4;
+      z-index: 10;
+      border-radius: $size-20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $geekblue-9;
+      font-size: $size-16;
+      border: $size-2 solid $geekblue-9;
+      cursor: copy;
+    }
+  }
+  .send-message-upload-file {
+    .upload-file-new {
+      height: 168px;
+      margin: 0;
+    }
+
+    .drop-zone-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        font-size: $size-36;
+        color: $blue-5;
+        height: $size-48;
+        margin-bottom: $size-16;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .description {
+        display: flex;
+        font-weight: 400;
+        font-size: $size-16;
+        line-height: $size-24;
+        color: $gray-9;
+        margin-bottom: $size-4;
+        .bold-blue {
+          font-weight: 600;
+          color: $blue-6;
+          margin-right: $size-2;
+        }
+      }
+      .second-desc {
+        max-width: 435px;
+        color: $gray-7;
+        font-weight: 400;
+        font-size: $size-14;
+        line-height: $size-22;
+        text-align: center;
+      }
+    }
+  }
+  .file-list-container {
+    margin-top: $size-10;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .file-item {
+      width: calc(50% - 8px);
+      border: $size-1 solid $gray-5;
+      background-color: $gray-3;
+      border-radius: $size-2;
+      display: flex;
+      justify-content: center;
+      padding: $size-10;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $size-10;
+      &-title {
+        display: flex;
+        align-items: center;
+        max-width: calc(100% - 100px);
+        flex: 1;
+        &-icon {
+          width: $size-24;
+          height: $size-24;
+          color: $gray-7;
+          font-size: $size-18;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: $size-10;
+        }
+        &-name {
+          flex: 1;
+          color: $blue-6;
+          // : $size-160;
+          max-width: calc(100% - 40px);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .delete-icon-btn {
+        display: flex;
+        align-items: center;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        font-size: $size-14;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &.is-disabled {
+    .message-input-container {
+      cursor: not-allowed;
+      background-color: $gray-3;
+    }
+  }
+  &.empty-error {
+    position: relative;
+    &::after {
+      content: 'Please type a message to continue.';
+
+      position: absolute;
+      top: -$size-22;
+      left: $size-18;
+
+      color: $gray-6;
+      border-radius: 5;
+      line-height: $size-20;
+      font-size: $size-12;
+      border-radius: $size-2;
+    }
+  }
+}

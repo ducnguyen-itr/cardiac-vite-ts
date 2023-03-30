@@ -1,0 +1,122 @@
+@import '../../../Styles/variables';
+@keyframes show-header-animation {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preview-file-modal {
+  padding: 0;
+  .ant-modal-content {
+    height: calc(100vh - 120px);
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .ant-modal-header,
+  .ant-modal-footer {
+    display: none;
+  }
+
+  .preview-file-container {
+    background-color: transparent;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .ant-modal-wrap {
+    overflow: hidden;
+  }
+  .preview-action-center {
+    animation: show-header-animation 0.3s ease-in;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: $size-64;
+    min-height: $size-64;
+    background-color: $gray-9;
+    margin-bottom: $size-4;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .print-btn {
+      margin-left: 50%;
+      border: none;
+    }
+    button {
+      margin-right: $size-24;
+      background: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      .anticon {
+        font-size: $size-24;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    button:hover {
+      background: none;
+    }
+    button:focus {
+      background: none;
+    }
+    button:active {
+      background: none;
+    }
+  }
+  .ant-modal-body {
+    height: 100%;
+  }
+  .preview-file-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .loading-space {
+      background-color: transparent;
+    }
+  }
+  .preview-file-image {
+    width: 100%;
+    max-width: 600px;
+    max-height: 100%;
+  }
+  .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .loader {
+    border: $size-4 solid #c4c4c4;
+    border-radius: 50%;
+    border-top: $size-4 solid $gray-2;
+    width: $size-48;
+    height: $size-48;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+}

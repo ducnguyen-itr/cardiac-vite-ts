@@ -1,0 +1,17 @@
+@import '../../Styles/variables';
+
+.bioheart-chart-wrapper {
+  width: 100%;
+  .chart-title {
+    padding: $size-8 $size-12;
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+    color: $gray-9;
+  }
+  .chart-container {
+    border: $size-1 solid $gray-4;
+    border-radius: $size-10;
+    padding: $size-16;
+  }
+}

@@ -1,0 +1,8 @@
+@import '../../../Styles/variables';
+
+.report-log-display-data {
+  padding: $size-16 $size-24;
+  &.display-data-2-wrapper .display-data-2-item .right-item {
+    padding-left: 0;
+  }
+}

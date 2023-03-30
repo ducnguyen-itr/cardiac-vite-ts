@@ -1,0 +1,393 @@
+@import '../../Styles/variables';
+
+.patient-detail-info-wrapper {
+  padding: $size-16 $size-24;
+  background-color: white;
+
+  .patient-info-content {
+    display: flex;
+    padding-bottom: $size-10;
+    border-bottom: $size-1 solid $gray-3;
+
+    .patient-info-avatar {
+      padding: 0 $size-50;
+    }
+
+    .patient-info-detail {
+      padding-left: $size-24;
+      flex: 1;
+
+      .patient-info-detail-top {
+        display: flex;
+        align-items: center;
+        color: $gray-9;
+        margin-bottom: $size-5;
+
+        .patient-info-detail-name {
+          font-weight: 600;
+          font-size: $size-20;
+          line-height: $size-28;
+          margin-right: $size-10;
+
+          .patient-info-detail-name-value {
+            & + .patient-type-tag-item {
+              margin-left: $size-10;
+            }
+          }
+        }
+
+        .patient-info-detail-top-item {
+          font-size: $size-14;
+          padding: 0 $size-10;
+          border-right: $size-1 solid $gray-5;
+        }
+
+        .patient-info-detail-button-note {
+          margin: 0 $size-10;
+          padding: 0;
+          color: $blue-6;
+          border: none;
+          position: relative;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          img {
+            margin-right: $size-5;
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .patient-info-detail-bottom {
+        display: flex;
+        gap: $size-5;
+        justify-content: space-between;
+
+        .patient-info-detail-bottom-col {
+          flex: 1;
+
+          .patient-info-detail-bottom-col-item {
+            display: flex;
+
+            .patient-info-detail-bottom-col-item-icon {
+              color: $gray-7;
+              margin-right: $size-6;
+              margin-top: $size-4;
+              height: $size-16;
+              width: $size-16;
+              font-size: $size-16;
+            }
+
+            .patient-info-detail-bottom-col-item-title {
+              color: $gray-7;
+              min-width: $size-150;
+            }
+
+            .patient-info-detail-bottom-col-item-link {
+              color: $blue-6;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .patient-info-footer {
+    margin-top: $size-10;
+
+    .patient-info-footer-title {
+      color: $gray-7;
+    }
+
+    .patient-info-footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-right {
+        display: flex;
+        align-items: center;
+
+        .patient-info-footer-btn + .patient-info-footer-btn {
+          margin-left: $size-12;
+        }
+      }
+    }
+  }
+
+  &.small-header {
+    height: $size-64;
+    overflow: hidden;
+    position: fixed;
+    left: $size-200;
+    right: 0;
+    z-index: 100;
+
+    .patient-info-content {
+      padding-bottom: 0;
+      border: none;
+
+      .patient-info-avatar {
+        padding: 0;
+      }
+
+      .patient-info-detail-container {
+        .patient-info-detail-bottom {
+          opacity: 0;
+        }
+
+        .patient-info-footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-right {
+            display: flex;
+            align-items: flex-start;
+
+            .patient-info-footer-btn + .patient-info-footer-btn {
+              margin-left: $size-12;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.delete-tag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: $gold-3;
+  background-color: $gold-1;
+
+  p {
+    margin: 0;
+  }
+
+  &-icon {
+    color: $gold-6;
+    padding: 0 $size-10;
+    font-size: $size-22;
+  }
+
+  &-desc {
+    font-weight: 400;
+    font-size: $size-12;
+    line-height: $size-20;
+    color: $gray-8;
+  }
+}
+
+.display-healthcare-wrapper {
+  .ant-space-vertical {
+    flex-direction: unset;
+
+    button {
+      padding: 0;
+      background: transparent;
+      color: $blue-6;
+      border: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .healthcare-tag {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .healthcare-tag-text {
+        margin-left: $size-10;
+      }
+    }
+  }
+}
+
+.ant-popover-arrow-content {
+  background: $gold-2;
+}
+
+.ant-popover-inner-content {
+  padding: 0;
+
+  .patient-info-detail-popover-content {
+    background: $gold-2;
+    padding: $size-5 $size-12;
+    .patient-info-detail-popover-input textarea {
+      color: $gray-9;
+      padding: 0;
+      border: none;
+      background: transparent;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .patient-info-detail-popover-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .patient-info-detail-popover-bottom-item {
+        color: $gray-7;
+        display: flex;
+        align-items: center;
+        font-size: $size-10;
+        line-height: $size-20;
+        font-weight: 600;
+        margin-top: $size-5;
+        flex: 1;
+        white-space: nowrap;
+
+        & + .patient-info-detail-popover-bottom-item {
+          margin-left: $size-5;
+        }
+
+        .patient-info-detail-popover-icon {
+          font-size: $size-12;
+          margin-right: $size-2;
+        }
+      }
+    }
+  }
+}
+
+.small-patient-detail-info-wrapper {
+  padding: $size-16 $size-24;
+  background-color: white;
+  animation: height 2s linear;
+  position: fixed;
+  left: $size-200;
+  right: $size-6;
+  z-index: 88;
+  border-bottom: $size-1 solid $gray-4;
+
+  .patient-info-content {
+    display: flex;
+
+    .patient-info-detail-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .patient-info-detail {
+        padding-left: $size-24;
+        flex: 1;
+
+        .patient-info-detail-top {
+          display: flex;
+          align-items: center;
+          color: $gray-9;
+
+          .patient-info-detail-name {
+            font-weight: 600;
+            font-size: $size-20;
+            line-height: $size-28;
+            margin-right: $size-10;
+
+            .patient-info-detail-name-value {
+              & + .patient-type-tag-item {
+                margin-left: $size-10;
+              }
+            }
+          }
+
+          .patient-info-detail-top-item {
+            font-size: $size-14;
+            padding: 0 $size-10;
+            border-right: $size-1 solid $gray-5;
+          }
+
+          .patient-info-detail-button-note {
+            margin: 0 $size-10;
+            padding: 0;
+            color: $blue-6;
+            border: none;
+            position: relative;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            img {
+              margin-right: $size-5;
+            }
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .patient-info-footer-content-right {
+        display: flex;
+        align-items: flex-start;
+
+        .patient-info-footer-btn + .patient-info-footer-btn {
+          margin-left: $size-12;
+        }
+      }
+    }
+  }
+}
+
+.patient-info-detail-dropdown {
+  .ant-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $size-360;
+
+    .ant-dropdown-menu-item {
+      width: 100%;
+    }
+  }
+
+  .patient-info-footer-btn {
+    border: none;
+  }
+
+  .patient-info-detail-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue-6;
+
+    .patient-info-detail-dropdown-item-icon {
+      margin-right: $size-4;
+    }
+
+    &.danger {
+      color: $red-5;
+    }
+  }
+}
+
+.delete-tag-tooltip-overlay {
+  font-size: $size-12;
+  min-width: $size-352;
+
+  .ant-tooltip-inner {
+    background: $gray-9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

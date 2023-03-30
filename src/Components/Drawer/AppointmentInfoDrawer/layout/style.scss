@@ -1,0 +1,47 @@
+@import '../../../../Styles/variables';
+.appointment-card {
+  border: 1px solid $gray-4;
+  font-weight: 400;
+  font-size: $size-14;
+  line-height: $size-22;
+  color: $gray-9;
+  padding: $size-12;
+  display: flex;
+  flex-direction: column;
+  gap: $size-8;
+  background-color: $gray-1;
+  &-date {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .go-detail-btn {
+      border: none;
+      padding: 0 $size-4;
+      width: fit-content;
+      height: fit-content;
+      background-color: transparent;
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
+      &:focus {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  &-row {
+    display: flex;
+    gap: $size-4;
+  }
+  &-col {
+    flex: 1;
+    &:last-child {
+      flex: 2;
+    }
+  }
+  &.active {
+    background-color: $blue-1;
+  }
+}

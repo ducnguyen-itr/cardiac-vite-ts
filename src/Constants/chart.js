@@ -1,0 +1,42 @@
+export const SPAN_DATA_INTERVAL_ENUM = {
+  // 1000 * 3600 * 24 * 30
+  ONE_MONTH: 2592000000,
+  // 1000 * 3600 * 24
+  ONE_DAY: 86400000,
+  // 1000 * 3600 * 6
+  SIX_HOURS: 21600000,
+  // 1000 * 60 * 30
+  THIRDTY_MINUTES: 1800000,
+  // 1000 * 60 * 5
+  FIVE_MINUTES: 300000,
+  // 1000 * 60 * 1
+  ONE_MINUTE: 60000,
+};
+
+export const TICK_INTERVAL_CHART_ENUM = {
+  // 1000 * 3600 * 24 * 30
+  YEAR: 2592000000,
+  // 1000 * 3600 * 24 * 7
+  MONTH: 604800000,
+  // 1000 * 3600 * 24
+  WEEK: 86400000,
+  // 1000 * 3600 * 4
+  DAY: 14400000,
+  // 1000 * 60 * 15
+  HOUR: 900000,
+};
+
+export const REPORT_TIME_TYPE_ENUM = {
+  DAY: 'Day',
+  HOUR: 'Hour',
+  MONTH: 'Month',
+  WEEK: 'Week',
+  YEAR: 'Year',
+  TEN_MINS: 'TenMins',
+};
+
+export const TYPE_CHART_ENUM = {
+  COLUMN: 'COLUMN',
+  LINE: 'LINE',
+  LINE_RANGE: 'LINE_RANGE',
+};

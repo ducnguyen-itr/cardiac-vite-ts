@@ -1,0 +1,49 @@
+@import '../../Styles/variables';
+
+.patient-edit-info-drawer {
+  &-header {
+    .ant-btn-background-ghost {
+      color: $gray-9;
+    }
+    .modal-header-title {
+      font-weight: 600;
+      font-size: $size-20;
+      line-height: $size-28;
+      color: $gray-9;
+    }
+  }
+  &-form {
+    padding: $size-16 $size-24;
+    .edit-name-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $size-16;
+      .first-name {
+        margin-right: $size-8;
+      }
+      .last-name {
+        margin-left: $size-8;
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: $size-40;
+      .drawer-btn {
+        width: 50%;
+        &:first-child {
+          padding-right: $size-8;
+        }
+        &:last-child {
+          padding-left: $size-8;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../../Styles/variables';
+
+.ant-select-dropdown {
+  .ant-select-item {
+  }
+  .method-select-item__custom {
+    background-color: $blue-1;
+    text-align: center;
+    font-weight: 600;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $blue-6;
+  }
+}

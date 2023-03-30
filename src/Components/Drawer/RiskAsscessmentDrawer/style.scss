@@ -1,0 +1,44 @@
+@import '../../../Styles/variables';
+
+.risk-assessment-drawer {
+  .ant-drawer-content-wrapper {
+    width: 400px !important;
+    .ant-drawer-content {
+      .ant-drawer-wrapper-body {
+        .ant-drawer-header {
+          &-title {
+            flex-direction: row-reverse;
+            align-items: center;
+            .ant-drawer-title {
+              font-weight: 600;
+              font-size: $size-20;
+              line-height: $size-28;
+              color: $gray-9;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              max-width: calc(100% - 1.875rem);
+            }
+            .ant-drawer-close {
+              margin-right: 0;
+              font-size: $size-16;
+              color: $gray-9;
+            }
+          }
+        }
+        .ant-drawer-body {
+          padding: $size-16 $size-24;
+          .risk-assessment-footer {
+            margin-top: $size-56;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .risk-assessment-footer-btn {
+              width: calc(50% - 0.5rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import '../../../Styles/variables';
+
+.appointment-info-drawer {
+  .patient-info-body {
+    .deleted-notice {
+      padding: $size-8 $size-16;
+      border: solid 1px $gold-3;
+      background: $gold-1;
+      display: flex;
+      margin-bottom: $size-16;
+
+      &-icon {
+        margin-top: $size-4;
+        color: $gold-6;
+        font-size: $size-14;
+        color: $gold-6;
+      }
+
+      &-content {
+        margin-left: $size-8;
+      }
+    }
+  }
+
+  .ant-drawer-header {
+    display: none;
+  }
+
+  &-header {
+    height: 100%;
+    position: relative;
+
+    .ant-tabs-top > .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+
+    .ant-tabs.ant-tabs-top {
+      height: 100%;
+
+      .ant-tabs-content-holder {
+        height: calc(100% - 56px);
+
+        .ant-tabs-content {
+          height: 100%;
+        }
+      }
+
+      .ant-tabs-tab {
+        max-width: $size-200;
+
+        .ant-tabs-tab-btn {
+          white-space: pre-wrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+        }
+      }
+    }
+
+    .ant-tabs-nav-wrap {
+      height: $size-56;
+      padding: 0 $size-24;
+    }
+
+    &-close-btn {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      top: $size-12;
+      right: $size-20;
+      z-index: 50;
+      cursor: pointer;
+
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
+
+      &:focus {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .appointment-info-show {
+    padding: $size-16 $size-24;
+    height: 100%;
+    overflow: auto;
+
+    &-title {
+      font-weight: 600;
+      font-size: $size-16;
+      line-height: $size-24;
+      color: $gray-9;
+    }
+
+    .no-appointment-text {
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      color: $gray-8;
+    }
+  }
+
+  .empty-appointment {
+    margin-top: $size-70;
+
+    .ant-empty-description {
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      color: $gray-8;
+      margin-top: $size-20;
+    }
+  }
+
+  .registered-clinic {
+    margin-top: $size-16;
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+    color: $gray-9;
+  }
+}
+
+.patient-info-title-row {
+  display: flex;
+  align-items: center;
+  line-height: $size-22;
+
+  & + .patient-info-title-row {
+    margin-top: $size-4;
+  }
+
+  .patient-info-title-plan-type,
+  .patient-info-title-care-plan,
+  .patient-info-title-age {
+    color: $gray-8;
+  }
+
+  .patient-info-title-plan-type {
+    & + .patient-info-title-care-plan {
+      padding-left: $size-16;
+      margin-left: $size-16;
+      position: relative;
+    }
+  }
+
+  .patient-info-title-care-plan::after {
+    position: absolute;
+    content: '';
+    width: $size-1;
+    height: $size-16;
+    left: 0;
+    top: $size-3;
+    background: $gray-5;
+  }
+
+  .ant-tag {
+    margin-left: $size-10;
+  }
+}

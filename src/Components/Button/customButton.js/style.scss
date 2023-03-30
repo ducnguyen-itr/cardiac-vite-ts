@@ -1,0 +1,26 @@
+@import '../../../Styles/variables';
+
+.custom-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // width: min-content;
+  // background-color: $blue-2;
+}
+.custom-button--reverse {
+  flex-direction: row-reverse;
+  gap: $size-4;
+}
+.custom-button--primary-light {
+  background-color: $blue-1;
+  &:hover {
+    background-color: $blue-1;
+  }
+  &:disabled {
+    background-color: $blue-1;
+    &:hover {
+      background-color: $blue-1;
+    }
+  }
+}

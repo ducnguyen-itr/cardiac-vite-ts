@@ -1,0 +1,30 @@
+@import '../../../Styles/variables';
+.checkbox-list-wrapper {
+  .checkbox-list-title {
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $gray-8;
+    margin-top: $size-5;
+    margin-bottom: $size-5;
+    cursor: default;
+  }
+  .horizontal-checkbox-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: $size-12;
+    border-left: $size-1 solid $gray-4;
+    margin-left: $size-3;
+    &.no-padding-left {
+      padding-left: 0;
+    }
+  }
+
+  .ant-checkbox-wrapper {
+    margin: $size-5 0;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $gray-8;
+  }
+}

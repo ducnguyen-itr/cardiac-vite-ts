@@ -1,0 +1,27 @@
+@import '../../../../Styles/variables';
+
+.had-bled-form {
+  color: $gray-9;
+  .had-bled-summary {
+    margin-top: $size-14;
+    padding: $size-10 $size-14;
+    background-color: $gray-2;
+    &-score {
+      display: flex;
+      justify-content: space-between;
+    }
+    .total {
+      font-weight: 600;
+      font-size: $size-14;
+      line-height: $size-22;
+    }
+  }
+  .had-bled-footer {
+    display: flex;
+    gap: $size-16;
+    margin-top: $size-56;
+    &-btn {
+      flex: 1;
+    }
+  }
+}

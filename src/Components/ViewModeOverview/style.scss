@@ -1,0 +1,212 @@
+@import '../../Styles/variables';
+
+.overview-view-mode-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+    min-width: $size-300;
+    width: 22%;
+    max-width: $size-350;
+    background-color: $blue-1;
+    .change-view-btn {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      span {
+        font-size: $size-12;
+      }
+      &:hover,
+      &:focus {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+      }
+      &:disabled {
+        &:focus {
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+.view-mode-overview-button {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: $size-200;
+  padding: $size-5 $size-10;
+  border: none;
+
+  background-color: $blue-1;
+  border: $size-1 solid $blue-1;
+  border-radius: $size-5;
+
+  &.active-btn,
+  &:hover,
+  &:focus {
+    background-color: $blue-1;
+    border: $size-1 solid $blue-6;
+    box-shadow: 0px 0px 4px rgba(24, 144, 255, 0.5);
+  }
+  &::after {
+    display: none;
+  }
+
+  span {
+    margin: 0;
+    font-weight: 600;
+    font-size: $size-14;
+    line-height: $size-22;
+    color: $gray-8;
+  }
+  &.ant-btn > .anticon + span {
+    margin: 0;
+  }
+  .view-mode-btn-icon {
+    color: $blue-6;
+    font-size: $size-16;
+    &.anticon-down {
+      font-size: $size-16;
+    }
+  }
+}
+.view-mode-overview-menu {
+  &-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    padding: $size-5 $size-12;
+    &:hover {
+      background-color: $blue-1;
+    }
+    &::after {
+      display: none;
+    }
+    span {
+      font-weight: 400;
+      font-size: $size-14;
+      line-height: $size-22;
+      color: $gray-8;
+    }
+    &.custom-view-label {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      &.ant-btn > .anticon + span {
+        margin: 0;
+      }
+    }
+  }
+}
+.view-mode-popover-content-wrapper {
+  background-color: $gray-1;
+  height: $size-408;
+  width: $size-560;
+  padding: $size-10 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .range-picker-label {
+    display: flex;
+  }
+  .view-mode-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: $size-24;
+    button {
+      &:first-child {
+        margin-right: $size-16;
+      }
+    }
+  }
+
+  .view-mode-range-picker {
+    .range-picker-label {
+      display: flex;
+      padding: 0 $size-24;
+      margin-bottom: $size-2;
+      div {
+        flex: 1;
+        font-weight: 400;
+        font-size: $size-14;
+        line-height: calc(22 / 14);
+        color: $gray-9;
+      }
+      .end-date {
+        margin-left: $size-68;
+      }
+    }
+    .ant-picker-input {
+      border: $size-1 solid $gray-5;
+      border-radius: $size-2;
+      height: $size-40;
+      padding: 0 $size-12;
+      transition: all 0.1s ease-in-out;
+      color: $gray-9;
+      &.ant-picker-input-active {
+        border: 1px solid #40a9ff;
+        box-shadow: 0px 0px 4px rgba(24, 144, 255, 0.5);
+        transition: all 0.1s ease-in-out;
+        color: $gray-9;
+      }
+    }
+    .ant-picker-range-separator {
+      margin: 0 $size-18;
+      span {
+        font-size: $size-18;
+        color: $gray-7;
+        height: unset;
+      }
+    }
+    .ant-picker-active-bar {
+      display: none;
+    }
+    .ant-picker-clear {
+      display: none;
+    }
+    .ant-picker-suffix {
+      display: none;
+    }
+    &.is-error {
+      .ant-picker-input {
+        border: $size-1 solid $red-6;
+        box-shadow: none;
+      }
+    }
+    .ant-picker.ant-picker-range {
+      border: none !important;
+      box-shadow: none;
+      padding: 0 $size-24;
+    }
+  }
+}
+.view-mode-calendar {
+  .ant-picker-panel-container {
+    box-shadow: none;
+  }
+}
+
+.apply-button {
+  span {
+    color: $gray-1;
+  }
+  &:disabled {
+    span {
+      color: $gray-7;
+    }
+  }
+}

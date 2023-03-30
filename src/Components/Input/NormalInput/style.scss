@@ -1,0 +1,30 @@
+@import '../../../Styles/variables';
+
+.input-wrapper {
+  position: relative;
+  .phone-number-input {
+    height: $size-32;
+    width: 100%;
+    border: 1px solid $gray-5;
+    border-radius: $size-2;
+    padding: 0 $size-8;
+    transition: 0.3s;
+    &::placeholder {
+      color: $gray-5;
+    }
+    &:focus {
+      border-color: $blue-5;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      border-right-width: 1px !important;
+      outline: 0;
+    }
+    &:hover {
+      border: 1px solid $blue-5;
+    }
+  }
+  &.is-error {
+    input {
+      border-color: $red-6;
+    }
+  }
+}

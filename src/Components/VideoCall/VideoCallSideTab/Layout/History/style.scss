@@ -1,0 +1,32 @@
+@import '../../../../../Styles/variables';
+
+.appointment-history {
+  color: $gray-9;
+  .ant-collapse {
+    background-color: $gray-1;
+    border: none;
+    .ant-collapse-item {
+      border: none;
+      margin-bottom: $size-1;
+      .ant-collapse-header {
+        border: none;
+        background-color: $gray-2;
+      }
+      .ant-collapse-content {
+        padding: $size-12 $size-24;
+        border: none;
+      }
+    }
+  }
+  &-title {
+    font-weight: 600;
+    font-size: $size-16;
+    line-height: $size-24;
+  }
+  &-reason {
+    padding: $size-8 $size-12;
+    font-weight: 400;
+    font-size: $size-14;
+    line-height: $size-22;
+  }
+}
